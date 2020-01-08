@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Deloitte </title>
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<script>
+	function show(itm)
+	{
+		itm.innerHTML = 'Hey,you clicked me.';
+	}
+	function displayDate()
+	{
+		document.getElementById("demo1").innerHTML = Date();
+	}
+	function loadIt()
+	{
+		document.getElementById("myBtn").onclick = displayDate;
+	}
+	function blurfunc()
+	{
+		document.getElementById("demo2").innerHTML = mytxt.value;
+	}
+</script>
+</head>
+<body>
+<h1 style="color:red"> Welcome </h1>
+<a href = "register.html">Click for registration</a>
+<input type="button" id="myBtn" value ="click for date" 
+	 onclick ="blurfunc()"/>
+<p id = "demo1"></p> 
+<br>Enter your name:
+<input type="text" name="mytxt" onblur="blurfunc()" placeholder="Your name here" />
+<p id = "demo2"></p>
+<h2 onclick = "show(this)">Click me!</h2>
+<ul>
+<li> Java </li>
+<li> HTML</li>
+</ul> 
+<span>Testing span </span><br><br>
+<div class = bglr> div tag with cyan background</div><br>
+<strong> this is a strong text</strong>
+<table border = "1" cellpadding="5">
+<tr>
+	<th>Sno</th>
+	<th>Name</th>
+	<th>Subject </th>
+	<th>Descr </th>
+</tr>
+<tr>
+	<td>1</td><td>xyz</td><td>java</td><td>abc</td>
+</tr>
+<tr><td colspan ="3">Total candidates</td><td>1</td></tr>
+</table>
+<br>
+	<img alt = "img" src="Images/1.jpg"><br>
+	<a href="scroll.html">Go to scroll</a>
+	</body>
+</html>

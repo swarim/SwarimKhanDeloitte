@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+span{
+color:red;
+font-size:20px
+}
+body
+{
+	background-image:url(Images/cloud.jpg);
+}
+a:hover
+{
+color:red;
+background-color:yellow;
+}
+th
+{
+	color:red;
+	border-color : blue;
+}
+h1
+{
+	color:green;
+	font-size: 50;
+	font-weight : bold;
+}
+th, td{
+	border-width : 2px 5px 12px 2px;
+}
+table{
+	border-spacing:  20px;
+}
+ul
+{
+	list-style-type : square;	
+}
+.bglr
+{
+	background-color:cyan;
+}
+strong
+{
+	text-tranform: capitalize;
+	margin-left : 100px;
+}

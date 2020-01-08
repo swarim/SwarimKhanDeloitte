@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery-test-6</title>
+<script src="jquery-1.5.1.min.js"></script>
+<script>
+	function slideDown() {
+		$("#divTestArea1").slideDown("fast");
+		$("#divTestArea2").slideDown("slow");
+		$("#divTestArea3").slideDown("5000");
+	}
+	function slideUp() {
+		$("#divTestArea1").slideUp("fast");
+		$("#divTestArea2").slideUp("slow");
+		$("#divTestArea3").slideUp("5000");
+	}
+</script>
+</head>
+<body>
+	<a href="javascript:void(0);" onclick="slideDown()">Slide Down</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="javascript:void(0);" onclick="slideUp()">Slide Up</a>
+
+	<div id="divTestArea1"
+		style="padding: 50px; Background-color: #899C38; width: 150px; display: none;">
+	</div>
+	<div id="divTestArea2"
+		style="padding: 50px; Background-color: #C3D1DF; width: 150px; display: none;">
+	</div>
+	<div id="divTestArea3"
+		style="padding: 50px; Background-color: #9966FF; width: 150px; display: none;">
+	</div>
+</body>
+</html>

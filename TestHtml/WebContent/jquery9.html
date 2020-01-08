@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery-test-6</title>
+<script src="jquery-1.5.1.min.js"></script>
+<script>
+	$(function() {
+		$("#divTestArea1 > b").css("color", "Magenta");
+		//for all elements of divtest		$("#divTestArea1 > b").css("color", "Magenta");
+	});
+</script>
+</head>
+<body>
+	<div id="divTestArea1">
+		<b>Bold Text</b> <i>Italic Text</i>
+		<div id="divTestArea2">
+			<b>Bold Text 2</b> <i>Italic Text 2</i>
+			<div>
+				<b>Bold Text 3</b>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

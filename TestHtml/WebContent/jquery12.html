@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery-test-6</title>
+<script src="jquery-1.5.1.min.js"></script>
+<script>
+	function ToggleBox() {
+		$("#divTestArea1").fadeToggle("fast");
+		$("#divTestArea2").fadeToggle("slow");
+		$("#divTestArea3").fadeToggle("5000");
+	}
+</script>
+</head>
+<body>
+	<a href="javascript:void(0);" onclick="ToggleBox()">TOGGLE BOX</a>
+
+	<div id="divTestArea1"
+		style="padding: 50px; Background-color: #899C38; width: 150px; display: none;">
+	</div>
+	<div id="divTestArea2"
+		style="padding: 50px; Background-color: #C3D1DF; width: 150px; display: none;">
+	</div>
+	<div id="divTestArea3"
+		style="padding: 50px; Background-color: #9966FF; width: 150px; display: none;">
+	</div>
+</body>
+</html>
