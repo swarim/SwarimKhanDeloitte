@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+            http://www.springframework.org/schema/context 
+            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<bean id="emp" class="com.deloitte.bean.Employee">
+		<!-- <property name="id" value="1234" /> <property name="name" value="Swarim" 
+			/> <property name="mobile" value="9827291011" /> -->
+		<constructor-arg index="0" value="1244" />
+		<constructor-arg index="2" value="9827291011" />
+		<constructor-arg index="1" value="Swarim" />
+		<constructor-arg index="3" ref="addr" />
+	</bean>
+	<bean id="addr" class="com.deloitte.bean.Address">
+		<property name="houseNo" value="5566" />
+		<property name="street" value="paratagalli" />
+		<property name="city" value="mumbai" />
+
+	</bean>
+
+</beans>            
