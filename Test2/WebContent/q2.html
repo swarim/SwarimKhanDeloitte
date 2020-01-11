@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>question-2</title>
+<script src="jquery-1.5.1.min.js"></script>
+<script>
+	function myfunction() {
+		var x = $("#textbox1").val();
+		$("#show").append(" " + x);
+	}
+</script>
+</head>
+<body>
+
+	<input type="text" name="textbox1" id="textbox1" />
+	<br />
+	<div id="show"></div>
+	<br />
+
+	<input type="submit" name="button" id="button1" onclick="myfunction()"
+		value="Click" />
+
+</body>
+</html>
