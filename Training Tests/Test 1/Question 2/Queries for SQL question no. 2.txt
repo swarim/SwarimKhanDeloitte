@@ -1,0 +1,3 @@
+Select * from BOOKING where booked_status="available" AND (showdates BETWEEN TO_DATE('2020-01-04','YYYY-MM-DD') AND TO_DATE('2020-01-10','YYYY-MM-DD'));
+
+Select booked_status,count(status)from BOOKING group by status;
